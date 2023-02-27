@@ -36,7 +36,7 @@ Os serviços de versionamento de código (GitHub, GitLab, BitBucket e etc...) te
 ### Solução
 
 Criar um(a) serviço/API que irá intermédiar entre o repositório e o forge, com as seguintes caracteristicas:
-- Quando houver um push na main/master do reposótorio, todos os clientes devem ser atualizados.
+- Quando houver um push na main/master do repositorio, todos os clientes devem ser atualizados.
 - Deve-se considerar um limite de 60 requisições por minuto a API forge.
 
 Para isso o forge disponibiliza uma API REST com varios endpoints, por agora iremos últilizar somente dois
