@@ -60,6 +60,7 @@ O retorno do endpoint `/servers/{server_id}/sites` é um JSON contendo uma lista
 
 Onde o campo `deployment_url` é uma url disponibilizada pelo forge, que ao receber um POST, irá executar o deploy novamente do site.
 
+Você deve criar uma fake API para simular a API do forge com os dois endpoints acima citados.
 
 ## O que será avaliado e valorizamos :heart:
 - Código limpo e organizado (nomenclatura, etc)
