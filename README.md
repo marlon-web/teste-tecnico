@@ -35,7 +35,7 @@ Os serviços de versionamento de código (GitHub, GitLab, BitBucket e etc...) te
 
 ### Solução
 
-Criar um(a) serviço/API que irá intermédiar entre o repositório e o forge, com as seguintes caracteristicas:
+Criar um(a) serviço/API com um endpoint  que irá intermédiar entre o repositório e o forge, com as seguintes caracteristicas:
 - Quando houver um push na main/master do repositorio, todos os clientes devem ser atualizados.
 - Deve-se considerar um limite de 60 requisições por minuto a API forge.
 
@@ -58,9 +58,9 @@ O retorno do endpoint `/servers/{server_id}/sites` é um JSON contendo uma lista
 - deployment_url
 - repository
 
-Onde o campo `deployment_url` é uma url disponibilizada pelo forge, que ao receber um POST, irá executar o deploy novamente do site.
+Onde o campo `deployment_url` é uma url disponibilizada pelo forge, que ao receber um POST, irá executar o deploy da aplicação.
 
-Você deve criar uma fake API para simular a API do forge com os dois endpoints acima citados.
+Você deve criar uma fake API/mock para simular a API do forge com os dois endpoints acima citados.
 
 ## O que será avaliado e valorizamos :heart:
 - Código limpo e organizado (nomenclatura, etc)
